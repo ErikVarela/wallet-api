@@ -63,28 +63,30 @@ GET http://localhost:8080/accounts/1/balance
   "holder": "Candidato Convem",
   "balance": 100000
 }
-
+```
 ---
 
 #### 💸 Transferir dinheiro
 
 POST /transfer
-
+```
 Body (JSON):
 {
   "from_id": "1",
   "to_id": "2",
   "amount": 1000
 }
-
+```
 
 Exemplo de requisição:
 POST http://localhost:8080/transfer
 Resposta:
+
+```
 {
   "message": "Transferência realizada com sucesso!"
 }
-
+```
 ---
 
 #### 🧠 Lógica da Aplicação
