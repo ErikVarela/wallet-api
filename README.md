@@ -30,7 +30,7 @@ A aplicação simula operações básicas de um sistema bancário, como consulta
 ## ⚙️ Como executar o projeto
 
 ### 1. Clone o repositório
-git clone https://github.com/ErikVarela/convem-api.git
+git clone https://github.com/ErikVarela/wallet-api.git
 cd seu-repositorio
 
 ### 2. Instale as dependências
