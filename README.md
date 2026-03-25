@@ -64,7 +64,7 @@ GET http://localhost:8080/accounts/1/balance
   "balance": 100000
 }
 
-
+---
 
 ####💸 Transferir dinheiro
 
@@ -85,6 +85,7 @@ Resposta:
   "message": "Transferência realizada com sucesso!"
 }
 
+---
 
 ####🧠 Lógica da Aplicação
 
