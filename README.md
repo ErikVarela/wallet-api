@@ -38,23 +38,34 @@ Diferente da versão inicial que utilizava armazenamento em memória (slices), e
 ├── go.mod       # Gerenciamento de dependências
 ├── banco.db     # Arquivo do banco de dados (gerado automaticamente)
 └── .gitignore   # Proteção para não subir o arquivo de banco
+´´´´
 
 ## ⚙️ Como executar o projeto
 
 ### 1. Clone o repositório
+
+```
 git clone https://github.com/ErikVarela/wallet-api.git
 cd seu-repositorio
+´´´
 
 ### 2. Instale as dependências
+
+```
 go mod init banking-api
 go get github.com/gin-gonic/gin
+´´´
 
 ### 3. Execute a aplicação
+```
 go run main.go
+´´´
 
-A API estará disponível em:
+## A API estará disponível em:
+
+```
 http://localhost:8080
-
+´´´
 
 ---
 
@@ -62,10 +73,15 @@ http://localhost:8080
 
 ### 🔍 Consultar saldo
 
+```
 **GET** `/accounts/:id/balance`
+´´´
 
 #### Exemplo de requisição:
+
+```
 GET http://localhost:8080/accounts/1/balance
+´´´
 
 #### Resposta:
 
