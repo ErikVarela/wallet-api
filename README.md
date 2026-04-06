@@ -119,26 +119,16 @@ Resposta:
 ```
 ---
 
-## 🧠 Lógica da Aplicação
+}
+## 🧠 Lógica de Persistência
 
-- As contas são armazenadas em memória (slice de structs)
-- A transferência atualiza diretamente os saldos das contas
-- Não há persistência em banco de dados (projeto educacional)
+- O banco de dados é um arquivo local chamado banco.db.
+- Ao iniciar, o sistema executa o initDB(), que cria a tabela accounts e insere dois registros padrão (Candidato e Empresa) caso eles ainda não existam (INSERT OR IGNORE).
+- Toda transferência é protegida por uma Transaction (tx), garantindo que o débito e o crédito ocorram simultaneamente.
 
 ## ⚠️ Melhorias futuras
 
-- Validação de saldo insuficiente
-- Uso de banco de dados (MySQL, PostgreSQL, etc.)
-- Autenticação e autorização (JWT)
-- Logs e tratamento de erros mais robusto
-- Testes automatizados
-
-
-## 📚 Objetivo
-
-- Este projeto foi desenvolvido com fins de estudo para praticar:
-
-- Criação de APIs REST com Go
-- Uso do framework Gin
-- Manipulação de requisições HTTP
-- Estruturação de projetos backend
+- Validação para impedir saldo negativo.
+- Endpoint para criação de novas contas (POST /accounts).
+- Implementação de logs estruturados.
+- Testes unitários para a lógica de transferência.
