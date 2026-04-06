@@ -38,7 +38,7 @@ Diferente da versão inicial que utilizava armazenamento em memória (slices), e
 ├── go.mod       # Gerenciamento de dependências
 ├── banco.db     # Arquivo do banco de dados (gerado automaticamente)
 └── .gitignore   # Proteção para não subir o arquivo de banco
-´´´´
+´´´
 
 ## ⚙️ Como executar o projeto
 
